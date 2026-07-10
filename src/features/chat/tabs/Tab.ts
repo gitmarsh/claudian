@@ -1309,6 +1309,7 @@ export function initializeTabControllers(
     getFileContextManager: () => ui.fileContextManager,
     updateQueueIndicator: () => tab.controllers.inputController?.updateQueueIndicator(),
     getAgentService: () => tab.service,
+    getTabId: () => tab.id,
   });
 
   // Wire subagent callback now that StreamController exists
